@@ -11,20 +11,14 @@ The attack methodology used by Phobos ransomware can be outlined as follows:
 
 | MITRE TACTICS            | STEPS INVOLVED                                                                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reconnaissance and Initial Access | <ul> <li>Phobos gains access through phishing campaigns, exploiting vulnerable RDP ports, and leveraging RDP on Windows environments.</li><li> - Initial access is often achieved through open source brute force tools.</li></ul>
-| Execution and Privilege Escalation | - Executes commands like 1saas.exe or cmd.exe to deploy elevated Phobos payloads.
-- Utilizes Windows command shell for control with different permission levels.                                           
-- Deploys Smokeloader for payload decryption.
-|| Smokeloader Deployment:    | - Smokeloader operates in three phases, manipulating API functions, obfuscating C2 activity, and deploying destructive malware.
-- Uses VirtualAlloc or VirtualProtect API functions for evasion.
-|| Defense Evasion Capabilities | - Modifies system firewall configurations using commands like netsh firewall set opmode mode=disable.
-- Uses tools like Universal Virus Sniffer, Process Hacker, and PowerTool for detection evasion.                                                     
-|| Persistence and Privilege Escalation | - Utilizes commands like Exec.exe or bcdedit[.]exe for persistence.             - Uses Windows Startup folders and Run Registry Keys for maintaining persistence.                                        - Exploits built-in Windows API functions for privilege escalation.                                                     
-|| Discovery and Credential Access | - Employs open source tools like Bloodhound and Sharphound for active directory enumeration.                                                        
-- Uses Mimikatz and NirSoft for exporting browser client credentials.                                                    - Enumerates connected storage devices, running processes, and encrypts user files.                                                                  
-|| Exfiltration               | - Utilizes WinSCP and ![Mega.io](http://Mega.io) for file exfiltration.                   - Connects directly to FTP servers and exports victim files to a cloud storage provider.                                 - Archives data as .rar or .zip files for exfiltration.                                                                                              
-| |Impact                     | - Deletes volume shadow copies to prevent file recovery.                                                                                              |
-- Encrypts all connected logical drives on the target host.                                                              - Extorts victims via email or voice calls, using onion sites to list victims and host stolen data.                       - Communicates through various instant messaging applications.                                                           |                            |
+| Reconnaissance and Initial Access | <ul> <li>Phobos gains access through phishing campaigns, exploiting vulnerable RDP ports, and leveraging RDP on Windows environments.</li><li>Initial access is often achieved through open source brute force tools.</li></ul>
+| Execution and Privilege Escalation | <ul><li> Executes commands like 1saas.exe or cmd.exe to deploy elevated Phobos payloads.</li><li>Utilizes Windows command shell for control with different permission levels.</li><li>Deploys Smokeloader for payload decryption.</li></ul>
+|| Smokeloader Deployment    | <ul><li> Smokeloader operates in three phases, manipulating API functions, obfuscating C2 activity, and deploying destructive malware.</li><li> Uses VirtualAlloc or VirtualProtect API functions for evasion.</li></ul>
+|| Defense Evasion Capabilities | <ul><li> Modifies system firewall configurations using commands like netsh firewall set opmode mode=disable.</li><li> Uses tools like Universal Virus Sniffer, Process Hacker, and PowerTool for detection evasion.</li></ul>                            
+|| Persistence and Privilege Escalation | <ul><li> Utilizes commands like Exec.exe or bcdedit[.]exe for persistence.</li><li> Uses Windows Startup folders and Run Registry Keys for maintaining persistence.</li><li> Exploits built-in Windows API functions for privilege escalation.</li></ul>    
+|| Discovery and Credential Access | <ul><li> Employs open source tools like Bloodhound and Sharphound for active directory enumeration.</li> <li> Uses Mimikatz and NirSoft for exporting browser client credentials.</li> <li>Enumerates connected storage devices, running processes, and encrypts user files.</li></ul>
+|| Exfiltration | <ul><li> Utilizes WinSCP and ![Mega.io](http://Mega.io) for file exfiltration.</li><li>Connects directly to FTP servers and exports victim files to a cloud storage provider.</li><li> Archives data as .rar or .zip files for exfiltration.</li></ul>                               
+| |Impact                     | <ul><li> Deletes volume shadow copies to prevent file recovery.</li><li>Encrypts all connected logical drives on the target host.</li><li> Extorts victims via email or voice calls, using onion sites to list victims and host stolen data.</li><li> Communicates through various instant messaging applications.</li>                                                           |                            |
 
 ### Interim guidance
 
