@@ -11,19 +11,20 @@ The attack methodology used by Phobos ransomware can be outlined as follows:
 
 | MITRE TACTICS            | STEPS INVOLVED                                                                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reconnaissance and Initial Access | - Phobos gains access through phishing campaigns, exploiting vulnerable RDP ports, and leveraging RDP on Windows environments. - Initial access is often achieved through open source brute force tools.   |
+| Reconnaissance and Initial Access | - Phobos gains access through phishing campaigns, exploiting vulnerable RDP ports, and leveraging RDP on Windows environments. 
+- Initial access is often achieved through open source brute force tools.   |
 | Execution and Privilege Escalation | - Executes commands like 1saas.exe or cmd.exe to deploy elevated Phobos payloads.
 - Utilizes Windows command shell for control with different permission levels.                                           
 - Deploys Smokeloader for payload decryption.
-| Smokeloader Deployment:    | - Smokeloader operates in three phases, manipulating API functions, obfuscating C2 activity, and deploying destructive malware.
+|| Smokeloader Deployment:    | - Smokeloader operates in three phases, manipulating API functions, obfuscating C2 activity, and deploying destructive malware.
 - Uses VirtualAlloc or VirtualProtect API functions for evasion.
-| Defense Evasion Capabilities | - Modifies system firewall configurations using commands like netsh firewall set opmode mode=disable.
+|| Defense Evasion Capabilities | - Modifies system firewall configurations using commands like netsh firewall set opmode mode=disable.
 - Uses tools like Universal Virus Sniffer, Process Hacker, and PowerTool for detection evasion.                                                     
-| Persistence and Privilege Escalation | - Utilizes commands like Exec.exe or bcdedit[.]exe for persistence.             - Uses Windows Startup folders and Run Registry Keys for maintaining persistence.                                        - Exploits built-in Windows API functions for privilege escalation.                                                     
-| Discovery and Credential Access | - Employs open source tools like Bloodhound and Sharphound for active directory enumeration.                                                        
+|| Persistence and Privilege Escalation | - Utilizes commands like Exec.exe or bcdedit[.]exe for persistence.             - Uses Windows Startup folders and Run Registry Keys for maintaining persistence.                                        - Exploits built-in Windows API functions for privilege escalation.                                                     
+|| Discovery and Credential Access | - Employs open source tools like Bloodhound and Sharphound for active directory enumeration.                                                        
 - Uses Mimikatz and NirSoft for exporting browser client credentials.                                                    - Enumerates connected storage devices, running processes, and encrypts user files.                                                                  
-| Exfiltration               | - Utilizes WinSCP and ![Mega.io](http://Mega.io) for file exfiltration.                   - Connects directly to FTP servers and exports victim files to a cloud storage provider.                                 - Archives data as .rar or .zip files for exfiltration.                                                                                              
-| Impact                     | - Deletes volume shadow copies to prevent file recovery.                                                                                              |
+|| Exfiltration               | - Utilizes WinSCP and ![Mega.io](http://Mega.io) for file exfiltration.                   - Connects directly to FTP servers and exports victim files to a cloud storage provider.                                 - Archives data as .rar or .zip files for exfiltration.                                                                                              
+| |Impact                     | - Deletes volume shadow copies to prevent file recovery.                                                                                              |
 - Encrypts all connected logical drives on the target host.                                                              - Extorts victims via email or voice calls, using onion sites to list victims and host stolen data.                       - Communicates through various instant messaging applications.                                                           |                            |
 
 ### Interim guidance
