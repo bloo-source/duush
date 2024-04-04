@@ -11,8 +11,7 @@ The attack methodology used by Phobos ransomware can be outlined as follows:
 
 | MITRE TACTICS            | STEPS INVOLVED                                                                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reconnaissance and Initial Access | <ul> <li>- Phobos gains access through phishing campaigns, exploiting vulnerable RDP ports, and leveraging RDP on Windows environments.</li>
-<li> - Initial access is often achieved through open source brute force tools.</li></ul>   |
+| Reconnaissance and Initial Access | <ul> <li>Phobos gains access through phishing campaigns, exploiting vulnerable RDP ports, and leveraging RDP on Windows environments.</li><li> - Initial access is often achieved through open source brute force tools.</li></ul>
 | Execution and Privilege Escalation | - Executes commands like 1saas.exe or cmd.exe to deploy elevated Phobos payloads.
 - Utilizes Windows command shell for control with different permission levels.                                           
 - Deploys Smokeloader for payload decryption.
