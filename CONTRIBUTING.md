@@ -21,6 +21,6 @@ We welcome contributions from the community! Please follow these guidelines to h
 
 ## Code of Conduct
 
-Please adhere to our [Code of Conduct](link-to-code-of-conduct).
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Thank you for contributing to Doosh!
