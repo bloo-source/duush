@@ -28,7 +28,7 @@ Check out our [Hall of Fame](hall-of-fame/) to see the top contributors and thei
 
 ## Code of Conduct
 
-We are committed to creating a welcoming and inclusive environment for everyone. Please review our [Code of Conduct](link-to-code-of-conduct) to understand our community standards and expectations.
+We are committed to creating a welcoming and inclusive environment for everyone. Please review our [Code of Conduct](CODE_OF_CONDUCT.md) to understand our community standards and expectations.
 
 ## Contact
 
