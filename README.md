@@ -1,6 +1,6 @@
-# Doosh
+# Bloofocus
 
-Welcome to Doosh, a community-driven library dedicated to documenting and sharing detailed threat tools and attack campaigns. Our mission is to create an open, collaborative platform where cybersecurity professionals and enthusiasts can contribute to and benefit from a rich repository of theats with contextual information.
+Welcome to Bloofocus, a community-driven library dedicated to documenting and sharing detailed threat tools and attack campaigns. Our mission is to create an open, collaborative platform where cybersecurity professionals and enthusiasts can contribute to and benefit from a rich repository of theats with contextual information.
 
 ## What You Can Do
 
@@ -20,7 +20,7 @@ Welcome to Doosh, a community-driven library dedicated to documenting and sharin
 
 ## Contribution Guidelines
 
-To contribute to Doosh, please review our [CONTRIBUTING.md](CONTRIBUTING.md) file for detailed instructions on how to submit your contributions, including documentation and threat hunting queries.
+To contribute to Bloofocus, please review our [CONTRIBUTING.md](CONTRIBUTING.md) file for detailed instructions on how to submit your contributions, including documentation and threat hunting queries.
 
 ## Hall of Fame
 
@@ -40,9 +40,9 @@ This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LIC
 
 ## Acknowledgements
 
-We appreciate the contributions of all community members and supporters who help make Doosh a valuable resource. Thank you for your involvement and dedication to enhancing cybersecurity knowledge.
+We appreciate the contributions of all community members and supporters who help make Bloofocus a valuable resource. Thank you for your involvement and dedication to enhancing cybersecurity knowledge.
 
 ---
 
-By participating in Doosh, you are joining a collective effort to advance threat hunting efforts through community collaboration. Explore, contribute, and be a part of our growing network dedicated to understanding and combating sophisticated cyber threats.
+By participating in Bloofocus, you are joining a collective effort to advance threat hunting efforts through community collaboration. Explore, contribute, and be a part of our growing network dedicated to understanding and combating sophisticated cyber threats.
 

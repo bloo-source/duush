@@ -1,4 +1,4 @@
-# Contributing to Doosh
+# Contributing to Bloofocus
 
 We welcome contributions from the community! Please follow these guidelines to help us maintain the quality of the repository.
 
@@ -23,4 +23,4 @@ We welcome contributions from the community! Please follow these guidelines to h
 
 Please adhere to our [Code of Conduct](link-to-code-of-conduct).
 
-Thank you for contributing to Doosh!
+Thank you for contributing to Bloofocus!
